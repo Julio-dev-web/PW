@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="">
+<script src=""></script>
+<style></style>
+</head>
+<body>
+<h1>Somando valores</h1>
+
+<input type="text" name="" id="txt1"> +
+<input type="text" name="" id="txt2">
+<input type="button" value="somar"  onclick="somar()">
+
+
+<br>
+<br>
+
+
+<div id="res">O resultado vai aparecer aqui</div>
+
+<script>
+    
+    function somar() {
+        
+        let n1 = Number(document.getElementById('txt1').value)
+        let n2 = Number(document.getElementById('txt2').value)
+        let res = document.getElementById('res')
+        let soma = n1 + n2 
+
+        if (soma >= 10){
+            
+
+        res.innerHTML = ` A soma de ${n1} e ${n2} e igual a ${soma}  `
+
+        
+    }
+    
+    
+    
+    
+    res.innerHTML = 'Boa'
+}
+
+
+
+</script>
+</body>
+</html>

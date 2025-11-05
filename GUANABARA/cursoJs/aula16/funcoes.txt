@@ -1,0 +1,48 @@
+
+1# Funções
+São ações executadas assim que são chamadas ou em decorrencia de algum evento.
+Algumas funções precisa ter uma chamada, parmetro, ação e retorno.
+
+Uma função pode receber parametros e retornar um resultado.
+
+        
+
+2 #Estrutura de uma função em JS
+
+a. Palavra-Chave e Nome
+    Começa com a Palavra-Chave « function »
+    É seguida pelo « nome » que voçe dá a função (por ex:calcularSoma).
+
+
+b. Parametros
+    São entradas que a função pode receber. São listados entre parenteses ().
+    Ex: Numa função de soma, os parametros seriam os números (a,b) que voçe quer somar.
+
+
+
+c. Corpo e Retorno(Return)
+    O corpo da função é o bloco de código entre chaves {} que contém as intruções a serem executadas.
+    A palavra-chave « Return » é usada para enviar um valor de volt para onde a função foi chamada. Se não houver um return explícito, a função retorna undefined.
+
+
+3 #Exmplo da sintaxe clássica:
+
+// Definição da Função 
+
+function Saudar(nome) {
+    const mensagem = "Olá" + nome + "!"
+    return mensagem
+
+// Corpo da função
+}
+
+
+//Chamada da função
+
+let cumprimento = Saudar("Maria")
+console.log(cumprimento) 
+
+
+
+
+

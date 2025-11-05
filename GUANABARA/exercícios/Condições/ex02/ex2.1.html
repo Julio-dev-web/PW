@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BahCode</title>
+
+    <style>
+
+        body{
+
+            background-color: #599abf;
+            font: bolder 15pt  monospace;
+        }
+
+        header{
+
+            color: white;
+            text-align: center;
+        }
+
+        section{
+
+            margin: auto ;
+            background-color: #fff;
+            width: 500px;
+            border-radius: 15px;
+            box-shadow:1px 1px 10px black ;
+        }
+
+        div{
+
+            text-align: center;
+            padding: 10px;
+        }
+
+        #img img{
+
+            border-radius: 25%;
+        }
+
+
+        footer{
+
+            text-align: center;
+            color: #fff;
+        }
+
+
+
+
+
+
+
+    </style>
+    
+        
+</head>
+<body onload="carregarHora()">
+
+    <header>
+        <h1>Hora do dia </h1>
+    </header>
+
+    <section>
+
+        <div id="res">
+
+            mostrar H
+        </div>
+
+
+        <div id="img">
+
+            <img id="imge" src="manhã.JPG" height="250px" width="250px" >
+
+
+        </div>
+
+        <script>
+            function carregarHora(){
+                
+                let hora = Number(prompt(`Coloque a hora`))
+                let imagem = document.getElementById('imge')
+                let show = document.getElementById('res')
+                
+
+                show.textContent = `Agora são ${hora}Horas.`
+
+                if(hora >= 0 && hora<12){
+
+                    imagem.src = 'manhã.JPG' 
+                    document.body.style.backgroundColor = '#74c964'
+
+                } else if(hora >=12 && hora <18){
+
+                    imagem.src = 'tarde.JPG'  
+                    document.body.style.backgroundColor = '#816d93'
+
+
+                }else{
+
+                    imagem.src = 'noite.JPG'
+                    document.body.style.backgroundColor = '#3b1086'
+
+
+                }
+
+            }
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+    </section>
+
+
+    <footer>
+
+
+        <p>&copy;JúlioM</p>
+    </footer>
+
+
+</body>
+</html>
